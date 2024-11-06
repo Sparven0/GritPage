@@ -1,13 +1,79 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="./output.css" rel="stylesheet">
+    <title>Home</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-amber-200">
+
+    <button class="navMbtn absolute"><img src="assets/navbild.png" alt="" class="w-12 mt-4"></button>
+<nav>
+    <div class="navbarM absolute bg-amber-400 w-full h-96 rounded">
+        <button class="navMbtncl"><img src="/src/assets/navbildsteng.png" alt="closebutton" class="w-10"></button>
+        <img src="assets/line-2.svg" alt="line" class="absolute">
+        <ul class="mt-10 text-center">
+            <li><a href="/src/produkter.html" target="_blank">Dumheter</a></li>
+            <li class="mt-2"><a href="">Om Oss</a></li>
+            <li class="mt-2"><a href="">Andra Grejer</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <nav class="navbarC">
+
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+        <ul class="flex ">
+            <li class="mr-6"><a href="/src/produkter.html">Dumheter</a></li>
+            <li class="mr-6"><a href="">Om Oss</a></li>
+            <li class="mr-6"><a href="">Andra Grejer</a></li>
+        </ul>
+        <img src="/src/assets/guvingerbanner.png" alt="BannerLogo" class="banner">
+    </div>
+</nav>
+    <div class="flex w-full justify-center">
+    <div class="flex w-96 flex-wrap justify-center">
+        <img src="/src/assets/curved-text .png" alt="CurvedText" class="spintext">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novesta.cz%2FPlugins%2FAzara.Novesta%2FContent%2Fimages%2Fnovesta%2Fpages%2Ffactory%2Fvulcanization.png&f=1&nofb=1&ipt=4967aa86a42e719879863bf81bc0d40093e82755cb885df5097d39afd4b8562d&ipo=images" alt="Novesta">
+<img src="assets/misc-5.svg" alt="face" class="absolute face">
+<ul class="list-disc mt-10">
+<li>Dumheter</li>
+<li>Grafiskt</li>
+<li>Kaffe</li>
+</ul>
+    </div>
+</div>
+
+<footer class="flex w-1/3 justify-between">
+    <article class="footer">
+        <p>Du finner oss här</p>
+        <p>@WQM</p>
+        <img src="/src/assets/GUVINGER.png" alt="Logga" class="logga">
+    </article>
+    <article class="footer">
+        <p>Även här finns vi</p>
+        <p>@WQM</p>
+    </article>
+</footer>
+
+</div>
+</div>
+
+
+<script>
+    let mobilenavclose=document.querySelector('.navMbtncl');
+    let mobilenav=document.querySelector('.navMbtn');
+    let navwindow=document.querySelector('.navbarM')
+    mobilenav.addEventListener('click',()=>{
+navwindow.classList.toggle('show');
+mobilenavclose.addEventListener('click', ()=>{
+    navwindow.classList.remove('show')
+})
+    })
+</script>
+
 </body>
 </html>
