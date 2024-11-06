@@ -1,0 +1,86 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(assets/sssplatter.svg);
+    background-repeat: no-repeat;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes slide-down{
+    from{
+        margin-top: -100%;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+
+
+
+.spintext{
+    animation: spin 4s infinite;
+}
+
+.footer{
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width:550px) {
+    .navbarC{
+        display: none;
+    }
+    .face{
+        display: none;
+    }
+    .produkter{
+        background-image: url(/src/assets/sssplatter2.svg);
+    }
+}
+
+@media (min-width:550px){
+    .navMbtn{
+        display: none;
+    }
+    .ballwrap{
+        display: none;
+    }
+    .produkter{
+        background-image: none;
+    }
+}
+
+
+.navbarM{
+    display: none;
+}
+
+.navbarM.show{
+    animation: slide-down 500ms;
+    display: block;
+    z-index: 10;
+}
+
+.face{
+    right: 0;
+    z-index: -10;
+    opacity: 40%;
+    width: 200px;
+}
+
+.logga{
+    width: 100px;
+}
+
+.banner{
+    width: 500px;
+}
