@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./gritpage/**/*.{html,js}"],
   theme: {
     extend: {},
   },
